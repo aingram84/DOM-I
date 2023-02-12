@@ -68,13 +68,71 @@ const navItem6 = nav["nav-item-6"];
 const nav6Text = document.querySelector("nav").querySelectorAll("a")[5];
 nav6Text.textContent = navItem6;
 
+nav1Text.classList.add("italic");
+nav2Text.classList.add("italic");
+nav3Text.classList.add("italic");
+nav4Text.classList.add("italic");
+nav5Text.classList.add("italic");
+nav6Text.classList.add("italic");
+
 const cta = siteContent["cta"];
 const ctaH1 = cta["h1"];
 const ctaButton = cta["button"];
 
 
 const mainContent = siteContent["main-content"];
+
+const textContentDiv1 = document.querySelectorAll(".main-content .top-content .text-content")[0].querySelector("h4");
 const featH4Text = mainContent["features-h4"];
+textContentDiv1.textContent = featH4Text;
+// const featBody = document.querySelectorAll(".main-content .top-content .text-content");
+// const featuresH4 = featBody[0].querySelector("h4");
+// const featuresP = featBody[0].querySelector("p");
+// featuresP.textContent = featureCont;
+const textBody1 = document.querySelectorAll(".main-content .top-content .text-content")[0].querySelector("p");
+const featBody = mainContent["features-content"];
+textBody1.textContent = featBody;
+
+const textContentDiv2 = document.querySelectorAll(".main-content .top-content .text-content")[1].querySelector("h4");
+const aboutH4Text = mainContent["about-h4"];
+textContentDiv2.textContent = aboutH4Text;
+const textBody2 = document.querySelectorAll(".main-content .top-content .text-content")[1].querySelector("p");
+const aboutBody = mainContent["about-content"];
+textBody2.textContent = aboutBody;
+
+const textContentDiv3 = document.querySelectorAll(".main-content .bottom-content .text-content")[0].querySelector("h4");
+const servicesH4Text = mainContent["services-h4"];
+textContentDiv3.textContent = servicesH4Text;
+const textBody3 = document.querySelectorAll(".main-content .bottom-content .text-content")[0].querySelector("p");
+const servicesBody = mainContent["services-content"];
+textBody3.textContent = servicesBody;
+
+const textContentDiv4 = document.querySelectorAll(".main-content .bottom-content .text-content")[1].querySelector("h4");
+const productH4Text = mainContent["product-h4"];
+textContentDiv4.textContent = productH4Text;
+const textBody4 = document.querySelectorAll(".main-content .bottom-content .text-content")[1].querySelector("p");
+const productBody = mainContent["product-content"];
+textBody4.textContent = productBody;
+
+const textContentDiv5 = document.querySelectorAll(".main-content .bottom-content .text-content")[2].querySelector("h4");
+const visionH4Text = mainContent["vision-h4"];
+textContentDiv5.textContent = visionH4Text;
+const textBody5 = document.querySelectorAll(".main-content .bottom-content .text-content")[2].querySelector("p");
+const visionBody = mainContent["vision-content"];
+textBody5.textContent = visionBody;
+
+// const featHeading = mainContent.topContent.textContent["text-content"];
+// const featH = document.getElementsByClassName("text-content")[0].querySelector("h4")[0];
+// featH.textContent = featHeading;
+
+
+// const mainContextText = mainContent
+
+// const featH4 = textContent["text-content"];
+// const featH4Text = document.getElementsByClassName("text-content")[0].querySelectorAll("h4")[0];
+// featH4Text.textContent = featH4; 
+
+
 const featureCont = mainContent["features-content"];
 const aboutH4 = mainContent["about-h4"];
 const aboutContent = mainContent["about-content"];
@@ -85,8 +143,7 @@ const productContent = mainContent["product-content"];
 const visionH4 = mainContent["vision-h4"];
 const visionContent = mainContent["vision-content"];
 
-const ctaFooter = siteContent["footer"];
-const ctaCopyright = ctaFooter["copyright"];
+
 
 // Contact Area
 const contact = siteContent["contact"];
@@ -119,3 +176,11 @@ const middleImg = document.getElementById("middle-img");
 ctaImg.src = siteContent.images["cta-img"];
 logoImg.src = siteContent.images["logo-img"];
 middleImg.src = siteContent.images["accent-img"];
+
+const newFoot = siteContent["footer"];
+
+const copyrightLabel = newFoot["copyright"];
+const copyrightText = document.querySelector("footer").querySelector("a");
+copyrightText.textContent = copyrightLabel;
+
+copyrightText.classList.add("bold");
